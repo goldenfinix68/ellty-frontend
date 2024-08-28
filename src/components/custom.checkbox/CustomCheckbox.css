@@ -1,0 +1,73 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+.custom-checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+  width: 370px;
+  height: 42px;
+  padding: 8px 15px 8px 22px;
+  margin: 0;
+}
+
+.custom-checkbox {
+  position: relative;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  &:hover {
+    border-color: #bdbdbd;
+
+    &:after {
+      color: #e3e3e3;
+    }
+  }
+
+  &:active {
+    border-color: #bdbdbd;
+
+    &:after {
+      color: #878787;
+    }
+  }
+
+  &:checked {
+    background-color: #2469f6;
+    border-color: #2469f6;
+
+    &:after {
+      color: #ffffff;
+    }
+
+    &:hover {
+      background-color: #5087f8;
+      color: #5087f8;
+    }
+
+    &:active {
+      background-color: #2469f6;
+      border-color: #2469f6;
+    }
+  }
+}
