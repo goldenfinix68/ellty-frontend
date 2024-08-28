@@ -1,0 +1,22 @@
+.custom-button-container {
+  width: 340px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 0 10px 0;
+  border: none;
+  color: #1f2128;
+  background-color: #ffce22;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+
+  &:hover {
+    background-color: #ffd84d;
+  }
+
+  &:active {
+    background-color: #ffce22;
+  }
+}
